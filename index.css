@@ -1,0 +1,155 @@
+/* ตั้งค่ารายการแสดงผลใน Header */
+*{
+    margin: 0%;
+    padding: 0;
+}
+main {
+    margin-top: 110px; /* ปรับตามความต้องการ */
+  }
+  
+header {
+    background-color: #434343;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* ทำให้ Header คงที่ */
+    top: 0; /* ตำแหน่งด้านบน */
+    left: 0; /* ตำแหน่งด้านซ้าย */
+    right: 0; /* ตำแหน่งด้านขวา */
+}
+
+/* ตั้งค่ารายการเมนู */
+nav ul {
+    list-style: none; /* ลบสัญลักษณ์ของรายการ */
+    padding: 0;
+}
+
+nav li {
+    display: inline; /* แสดงรายการในแนวนอน */
+    margin: 0 10px; /* ระยะห่างระหว่างรายการ */
+}
+
+nav a {
+    color: #fff; /* สีข้อความของลิงก์ */
+    text-decoration: none; /* ลบขีดเส้นใต้ข้อความลิงก์ */
+}
+li{
+    float: right;
+}
+.part1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px 0px 0px 5px;
+    width: 50%;
+    padding: 5px;
+}
+.part {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 0px 5px 5px 0px;
+    width: 50%;
+    padding: 5px;
+}
+.infobrochure {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+}
+.imgbrochure {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    max-width: 70%;
+    height: auto;
+}
+
+.footer {
+  padding: 0;
+  margin-bottom: auto;
+  height: auto;
+  background-color: #434343;
+  color: #ffffff;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.footer ::-webkit-validation-bubble-heading {
+  color: #fefefe;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #feffef;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 19px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: auto;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1px;
+  }
+
+  .footer {
+    position: unset;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 15px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
